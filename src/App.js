@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
-import { HomePage } from './components/homePage/homePage';
+import { AppRoute } from './AppRoute';
+
 
 function App() {
   return (
-    <HomePage></HomePage>
+    <AppRoute></AppRoute>
   );
 }
 
