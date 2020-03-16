@@ -3,6 +3,7 @@ import FormInput from '../common/formInput/formInput';
 import { Button } from '../common/button/button';
 import './login.css';
 import { Link } from 'react-router-dom';
+import GoogleButton from './../common/button/google';
 
 const defaultForm = {
     email: '',
@@ -87,8 +88,12 @@ export class Login extends React.Component {
                     <FormInput label= 'Password' handleChange={this.handleChange} type="password" name="password"></FormInput>
                     <p style={red}>{this.state.error.password}</p>
 
+            
                     {submitBtn}
+                    <GoogleButton>SIGN IN WITH GOOGLE</GoogleButton>
+    
                 </form>
+               
                 <h2 className="title">Don't have an account?</h2>
                 <h3><Link to="/register">Sign Up Now</Link></h3>
             </div>
